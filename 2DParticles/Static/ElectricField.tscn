@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/particles_part/spark_04.png" type="Texture" id=1]
+[ext_resource path="res://2DParticles/Static/ElectricField.tres" type="Material" id=2]
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 1
+
+[node name="ElectricField" type="Node2D"]
+
+[node name="Particles2D" type="Particles2D" parent="."]
+material = SubResource( 2 )
+amount = 22
+speed_scale = 2.0
+randomness = 0.32
+process_material = ExtResource( 2 )
+texture = ExtResource( 1 )
